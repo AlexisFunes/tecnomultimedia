@@ -10,7 +10,7 @@ void draw() {
 
   background(255);
 
-  //Movimiento del mouse
+  //Cambio del grosor de la linea con el mouseX
   strokeWeight(map( mouseX, 0, width, 2, radians(200)));
 
   //ciclo for
