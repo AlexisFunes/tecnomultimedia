@@ -2,7 +2,7 @@
 // Legajo 85121/2
 
 void setup() {
-  size(400, 400);
+  size(500, 500);
   background(255);
 }
 
