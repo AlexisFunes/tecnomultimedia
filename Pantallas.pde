@@ -10,14 +10,36 @@ void pantalla () {
     fill(0);
     text("Iniciar", 205, 335);
     noFill();
+  }
+else if(pantalla==1){
+  image(espacio,0,0);
+ 
+  fill(0,200,0);
+   rect(440, 480, 100, 25);
+    fill(0);
+    textSize(15);
+  text("instrucciones",392,485);
+    
+ }
+  else if(pantalla==2){
+  image(tutorial,0,0);
+ 
+  fill(0,200,0);
+   rect(440, 480, 100, 25);
+    fill(0);
+    textSize(15);
+  text("Jugar",420,485);
+  
+  }
 
+  // ---------------pantalla 1--------------
+  else if (pantalla==3) {
 
-
-    // ---------------pantalla 1--------------
-  } else if (pantalla==1) {
-
-
+    time2 = millis() - time1;
+    
+    if(time2 < 15000){
     background(255); 
+
     if (frame >= 10) {
       frame = 0;
     }
@@ -42,5 +64,9 @@ void pantalla () {
     println(frameRate);
 
     meteoritos();
+  }else{
+    image(persecucion, 0,0);
+    text("ganaste",250,250);
   }
+}
 }
